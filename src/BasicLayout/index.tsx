@@ -4,20 +4,20 @@ import type { CSSProperties, PropType, ExtractPropTypes } from 'vue';
 import 'ant-design-vue/es/layout/style';
 import { Layout } from 'ant-design-vue';
 import { withInstall } from 'ant-design-vue/es/_util/type';
-import useMediaQuery from './hooks/useMediaQuery';
+import useMediaQuery from '../hooks/useMediaQuery';
 
-import { defaultSettingProps } from './defaultSettings';
-import { provideRouteContext, defaultRouteContext, RouteContextProps } from './RouteContext';
-import SiderMenuWrapper, { siderMenuProps } from './SiderMenu';
-import { WrapContent } from './WrapContent';
-import globalHeaderProps from './GlobalHeader/headerProps';
-import { HeaderView as Header, headerViewProps } from './Header';
-import { getPropsSlot, getPropsSlotfn, PropTypes, getMenuFirstChildren, pick } from './utils';
-import type { BreadcrumbProps } from './RouteContext';
-import type { CustomRender, FormatMessage, WithFalse } from './typings';
+import { defaultSettingProps } from '../defaultSettings';
+import { provideRouteContext, defaultRouteContext, RouteContextProps } from '../RouteContext';
+import SiderMenuWrapper, { siderMenuProps } from '../SiderMenu';
+import { WrapContent } from '../WrapContent';
+import globalHeaderProps from '../GlobalHeader/headerProps';
+import { HeaderView as Header, headerViewProps } from '../Header';
+import { getPropsSlot, getPropsSlotfn, PropTypes, getMenuFirstChildren, pick } from '../utils';
+import type { BreadcrumbProps } from '../RouteContext';
+import type { CustomRender, FormatMessage, WithFalse } from '../typings';
 
-import PageLoading from './PageLoading';
-import './BasicLayout.less';
+import PageLoading from '../PageLoading';
+import './index.less';
 
 export const basicLayoutProps = {
   ...defaultSettingProps,
