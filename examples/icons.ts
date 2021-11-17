@@ -1,3 +1,9 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 import * as Icons from '@ant-design/icons-vue/es';
 import type { App } from 'vue';
 import type { IconType } from '@ant-design/icons-vue/es/components/Icon';

@@ -1,3 +1,9 @@
+<!--
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+-->
 <template>
   <a-config-provider>
     <router-view />
