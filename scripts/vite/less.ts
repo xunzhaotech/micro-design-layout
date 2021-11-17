@@ -15,8 +15,6 @@ export default (): Plugin => {
   let config: ResolvedConfig;
   let output: string;
   const src = resolve('./src');
-  console.log(111111)
-  console.log(src)
   const charset = 'utf-8';
   const maps = new Map<string, string>();
   return {

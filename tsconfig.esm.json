@@ -14,7 +14,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*":["./src/*"],
-      "@ant-design-vue/pro-layout":["./src/index.ts"]
+      "@micro-design-vue/micro-layout":["./src/index.ts"]
     },
     "noEmit": false,
     "declaration": true,
