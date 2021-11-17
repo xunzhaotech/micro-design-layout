@@ -1,3 +1,9 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 import type { Slot, VNode, VNodeChild } from 'vue';
 
 export type Theme = 'dark' | 'light';

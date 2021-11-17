@@ -13,7 +13,6 @@ import App from './App.vue';
 
 import ProLayout, { PageContainer } from '../src'; // '../dist/pro-layout.es';
 
-
 const app = createApp(App);
 app.use(router);
 app.use(icons);
