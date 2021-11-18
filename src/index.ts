@@ -32,9 +32,9 @@ export type { WaterMarkProps } from './WaterMark';
 /**
  * 导出默认主题
  */
-// export { default } from './BasicLayout';
-import BasicLayout from './BasicLayout';
-export default BasicLayout;
+export { default } from './BasicLayout';
+// import BasicLayout from './BasicLayout';
+// export default BasicLayout;
 // export { default as ProLayout } from './BasicLayout';
 export type { BasicLayoutProps } from './BasicLayout';
 

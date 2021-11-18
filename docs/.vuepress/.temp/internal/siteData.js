@@ -1,8 +1,8 @@
 export const siteData = {
-  "base": "/",
-  "lang": "en-US",
-  "title": "",
-  "description": "",
+  "base": "/micro-design-layout/",
+  "lang": "zh-CN",
+  "title": "答神",
+  "description": "Just playing around",
   "head": [],
   "locales": {}
 }
