@@ -13,7 +13,7 @@ import { MenuUnfoldOutlined, MenuFoldOutlined } from '@ant-design/icons-vue';
 import BaseMenu, { baseMenuProps } from './BaseMenu';
 import { WithFalse, CustomRender } from '../typings';
 import { SiderProps } from './typings';
-import { defaultSettingProps } from '../defaultSettings';
+import { defaultSettingProps } from '../config/defaultSettings';
 import { useRouteContext } from '../RouteContext';
 import { PropTypes, getMenuFirstChildren } from '../utils';
 import './index.less';

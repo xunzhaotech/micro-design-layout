@@ -5,7 +5,7 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <pro-layout
+  <micro-layout
     v-model:collapsed="baseState.collapsed"
     v-model:selectedKeys="baseState.selectedKeys"
     v-model:openKeys="baseState.openKeys"
@@ -107,7 +107,7 @@
         </a-select>
       </a-space>
     </FooterToolbar>
-  </pro-layout>
+  </micro-layout>
 </template>
 
 <script lang="ts">

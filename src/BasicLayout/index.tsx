@@ -1,3 +1,9 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 import { computed, reactive, unref, defineComponent, toRefs } from 'vue';
 import type { CSSProperties, PropType, ExtractPropTypes } from 'vue';
 
@@ -6,7 +12,7 @@ import { Layout } from 'ant-design-vue';
 import { withInstall } from 'ant-design-vue/es/_util/type';
 import useMediaQuery from '../hooks/useMediaQuery';
 
-import { defaultSettingProps } from '../defaultSettings';
+import { defaultSettingProps } from '../config/defaultSettings';
 import { provideRouteContext, defaultRouteContext, RouteContextProps } from '../RouteContext';
 import SiderMenuWrapper, { siderMenuProps } from '../SiderMenu';
 import { WrapContent } from '../WrapContent';
@@ -73,7 +79,7 @@ export const basicLayoutProps = {
 export type BasicLayoutProps = Partial<ExtractPropTypes<typeof basicLayoutProps>>;
 
 const ProLayout = defineComponent({
-  name: 'ProLayout',
+  name: 'MicroLayout',
   inheritAttrs: false,
   props: basicLayoutProps,
   emits: [

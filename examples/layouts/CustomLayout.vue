@@ -5,7 +5,7 @@
  * @LastEditors: xunzhaotech
 -->
 <template>
-  <pro-layout
+  <micro-layout
     v-model:collapsed="baseState.collapsed"
     v-model:selectedKeys="baseState.selectedKeys"
     v-model:openKeys="baseState.openKeys"
@@ -71,7 +71,7 @@
         copyright="2021 &copy; Sendya"
       ></GlobalFooter>
     </template>
-  </pro-layout>
+  </micro-layout>
 </template>
 
 <script lang="ts">

@@ -14,7 +14,7 @@ import {
 } from 'vue'
 import { createContext, useContext } from './hooks/context'
 import { MenuDataItem, FormatMessage, WithFalse } from './typings'
-import { PureSettings } from './defaultSettings'
+import { PureSettings } from './config/defaultSettings'
 
 export interface Route {
   path: string

@@ -1,7 +1,7 @@
 import './index.less';
 
 import { FunctionalComponent, CSSProperties } from 'vue';
-import { PureSettings } from '../defaultSettings';
+import { PureSettings } from '../config/defaultSettings';
 import { useRouteContext } from '../RouteContext';
 
 export interface GridContentProps {

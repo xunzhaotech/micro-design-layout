@@ -5,7 +5,7 @@
  * @LastEditors: xunzhaotech
  */
 import type { PropType, ExtractPropTypes } from 'vue';
-import type { MenuTheme, ContentWidth } from './typings';
+import type { MenuTheme, ContentWidth } from '../typings';
 
 export interface RenderSetting {
   headerRender?: false;

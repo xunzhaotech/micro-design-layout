@@ -1,6 +1,6 @@
 import type { PropType } from 'vue';
 import type { CustomRender, Theme, MenuDataItem, WithFalse } from '../typings';
-import { defaultSettingProps } from '../defaultSettings';
+import { defaultSettingProps } from '../config/defaultSettings';
 import { PropTypes } from '../utils';
 import { siderMenuProps } from '../SiderMenu/SiderMenu';
 
