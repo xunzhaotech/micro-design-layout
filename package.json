@@ -28,7 +28,9 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "build:types": "tsc -b --force tsconfig.esm.json"
+    "build:types": "tsc -b --force tsconfig.esm.json",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "types": "./dist",
   "peerDependencies": {
@@ -66,6 +68,7 @@
     "vite": "^2.5.6",
     "vite-dts": "^1.0.3",
     "vite-plugin-dts": "^0.5.2",
-    "vue-tsc": "^0.3.0"
+    "vue-tsc": "^0.3.0",
+    "vuepress": "^2.0.0-beta.27"
   }
 }
