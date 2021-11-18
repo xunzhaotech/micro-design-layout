@@ -1,7 +1,7 @@
 export const data = {
   "key": "v-8daa1a0e",
   "path": "/",
-  "title": "Micro-Design-Layout",
+  "title": "MicroDesign",
   "lang": "en-US",
   "frontmatter": {},
   "excerpt": "",
