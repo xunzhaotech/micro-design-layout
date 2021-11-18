@@ -93,8 +93,9 @@ const MicroLayout = defineComponent({
     'menuClick',
   ],
   setup(props, { emit, slots }) {
-    console.log('props', props);
     const isTop = computed(() => props.layout === 'top');
+    console.log(111111111)
+    console.log(isTop)
     const hasSide = computed(() => props.layout === 'mix' || props.layout === 'side' || false);
     const hasSplitMenu = computed(() => props.layout === 'mix' && props.splitMenus);
     const hasFlatMenu = computed(() => {

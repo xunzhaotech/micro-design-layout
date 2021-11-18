@@ -17,7 +17,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   base: '/micro-design-layout/',
   lang: 'zh-CN',
   title: '答神',
-  description: 'Just playing around',
+  description: '一个基于微服务的企业架构平台',
   /**
    * 主题配置
    */

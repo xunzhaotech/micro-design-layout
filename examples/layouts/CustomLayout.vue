@@ -65,8 +65,9 @@
     <template #footerRender>
       <GlobalFooter
         :links="[
-          { key: '讯曌官网', title: '讯曌官网', href: 'http://www.baidu.com/', blankTarget: true },
-          { key: '快智岛', title: '快智岛', href: 'https://www.google.com/', blankTarget: true },
+          { key: '讯曌官网', title: '讯曌官网', href: 'http://www.xunzhaotech.com/#/home', blankTarget: true },
+          { key: '快智岛', title: '快智岛', href: 'https://xunzhaotech.gitee.io/kuaizhidao', blankTarget: true },
+           { key: '答神', title: '答神', href: 'https://xunzhaotech.gitee.io/kuaizhidao', blankTarget: true },
         ]"
         copyright="@2016-2021 &copy; Xunzhaotech"
       ></GlobalFooter>

@@ -75,7 +75,7 @@
 
     <!-- content begin -->
     <router-view v-slot="{ Component }">
-      <WaterMark content="Pro Layout">
+      <WaterMark content="Micro Design">
         <component :is="Component" />
       </WaterMark>
     </router-view>
@@ -152,8 +152,8 @@ export default defineComponent({
     const state = reactive({
       menuData,
       splitMenus: true,
-      // title: 'ProLayout',
-      // logo: 'https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg',
+      title: 'MicroLayout',
+      logo: 'https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg',
       navTheme: 'dark',
       layout: 'side',
       fixSiderbar: true,
