@@ -12,9 +12,9 @@ import {
   VNodeChild,
   ComputedRef,
 } from 'vue'
-import { createContext, useContext } from './hooks/context'
-import { MenuDataItem, FormatMessage, WithFalse } from './typings'
-import { PureSettings } from './config/defaultSettings'
+import { createContext, useContext } from '../hooks/context'
+import { MenuDataItem, FormatMessage, WithFalse } from '../typings'
+import { PureSettings } from '../config/defaultSettings'
 
 export interface Route {
   path: string

@@ -1,8 +1,8 @@
 import { FunctionalComponent, computed, toRefs, CSSProperties } from 'vue';
 import 'ant-design-vue/es/layout/style';
 import Layout from 'ant-design-vue/es/layout';
-import { useRouteContext } from './RouteContext';
-import type { ContentWidth } from './typings';
+import { useRouteContext } from '../RouteContext';
+import type { ContentWidth } from '../typings';
 
 const { Content } = Layout;
 
