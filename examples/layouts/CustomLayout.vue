@@ -16,7 +16,7 @@
     <template #menuHeaderRender>
       <a>
         <img src="https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg" />
-        <h1>Pro Layout</h1>
+        <h1>Micro Layout</h1>
       </a>
     </template>
     <!-- only work layout `Side` -->
@@ -65,10 +65,10 @@
     <template #footerRender>
       <GlobalFooter
         :links="[
-          { key: 'a link', title: 'Link1', href: 'http://www.baidu.com/', blankTarget: true },
-          { key: 'b link', title: 'Link2', href: 'https://www.google.com/', blankTarget: true },
+          { key: '讯曌官网', title: '讯曌官网', href: 'http://www.baidu.com/', blankTarget: true },
+          { key: '快智岛', title: '快智岛', href: 'https://www.google.com/', blankTarget: true },
         ]"
-        copyright="2021 &copy; Sendya"
+        copyright="@2016-2021 &copy; Xunzhaotech"
       ></GlobalFooter>
     </template>
   </micro-layout>
