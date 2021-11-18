@@ -78,7 +78,7 @@ export const basicLayoutProps = {
 
 export type BasicLayoutProps = Partial<ExtractPropTypes<typeof basicLayoutProps>>;
 
-const ProLayout = defineComponent({
+const MicroLayout = defineComponent({
   name: 'MicroLayout',
   inheritAttrs: false,
   props: basicLayoutProps,
@@ -302,4 +302,4 @@ const ProLayout = defineComponent({
   },
 });
 
-export default withInstall(ProLayout);
+export default withInstall(MicroLayout);

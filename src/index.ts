@@ -29,7 +29,12 @@ export { default as FooterToolbar } from './FooterToolbar';
 
 export { default as WaterMark } from './WaterMark';
 export type { WaterMarkProps } from './WaterMark';
-
-export { default } from './BasicLayout';
+/**
+ * 导出默认主题
+ */
+// export { default } from './BasicLayout';
+import BasicLayout from './BasicLayout';
+export default BasicLayout;
 // export { default as ProLayout } from './BasicLayout';
 export type { BasicLayoutProps } from './BasicLayout';
+

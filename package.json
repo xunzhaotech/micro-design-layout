@@ -39,7 +39,7 @@
     "vue-router": "^4.0.3"
   },
   "dependencies": {
-    "ant-design-vue": "^2.2.2",
+    "ant-design-vue": "^2.2.8",
     "lodash-es": "^4.17.21",
     "omit.js": "^2.0.2",
     "vue": "^3.2.0",
