@@ -1,8 +1,8 @@
 import { Vuepress } from '@vuepress/client/lib/components/Vuepress'
 
 const routeItems = [
-  ["v-3706649a","/404.html","",["/404"]],
   ["v-8daa1a0e","/","Micro-Design-Layout",["/index.html","/README.md"]],
+  ["v-3706649a","/404.html","",["/404"]],
 ]
 
 export const pagesRoutes = routeItems.reduce(
