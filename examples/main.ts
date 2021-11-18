@@ -11,13 +11,13 @@ import router from './router';
 import icons from './icons';
 import App from './App.vue';
 
-import ProLayout, { PageContainer } from '../src'; // '../dist/pro-layout.es';
+import MicroLayout, { PageContainer } from '../src'; // '../dist/pro-layout.es';
 
 const app = createApp(App);
 app.use(router);
 app.use(icons);
 app.use(ConfigProvider);
 app.use(Button);
-app.use(ProLayout);
+app.use(MicroLayout);
 app.use(PageContainer);
 app.mount('#app');
