@@ -4,14 +4,14 @@ import type { RouteRecordRaw } from 'vue-router';
 import 'ant-design-vue/es/layout/style';
 import { Layout } from 'ant-design-vue';
 
-import { GlobalHeader } from './GlobalHeader';
-import type { GlobalHeaderProps } from './GlobalHeader';
-import globalHeaderProps from './GlobalHeader/headerProps';
-import { TopNavHeader } from './TopNavHeader';
-import { useRouteContext } from './RouteContext';
-import type { CustomRender, WithFalse } from './typings';
-import { clearMenuItem, PropTypes } from './utils';
-import './Header.less';
+import { GlobalHeader } from '../GlobalHeader';
+import type { GlobalHeaderProps } from '../GlobalHeader';
+import globalHeaderProps from '../GlobalHeader/headerProps';
+import { TopNavHeader } from '../TopNavHeader';
+import { useRouteContext } from '../RouteContext';
+import type { CustomRender, WithFalse } from '../typings';
+import { clearMenuItem, PropTypes } from '../utils';
+import './index.less';
 
 const { Header } = Layout;
 

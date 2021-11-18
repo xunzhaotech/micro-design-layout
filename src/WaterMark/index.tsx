@@ -1,3 +1,9 @@
+/*
+ * @Author: xunzhaotech
+ * @Email: luyb@xunzhaotech.com
+ * @QQ: 1525572900
+ * @LastEditors: xunzhaotech
+ */
 import type { CSSProperties, PropType, ExtractPropTypes } from 'vue'
 import { defineComponent, computed, ref, watchEffect } from 'vue'
 import { useRouteContext } from '../RouteContext'
