@@ -1,7 +1,7 @@
 {
   "name": "micro-design-layout",
   "description": "Micro Design Layout of Vue, easy to use Micro scaffolding.",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "MIT",
   "files": [
     "dist"
