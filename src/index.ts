@@ -35,6 +35,6 @@ export type { WaterMarkProps } from './WaterMark';
 export { default } from './BasicLayout';
 // import BasicLayout from './BasicLayout';
 // export default BasicLayout;
-// export { default as ProLayout } from './BasicLayout';
+// export { default as MicroLayout } from './BasicLayout';
 export type { BasicLayoutProps } from './BasicLayout';
 

@@ -4,7 +4,7 @@ Micro Design Layout
 
 <div align="center">
 
-[![NPM version](https://img.shields.io/npm/v/@ant-design-vue/pro-layout/next?style=flat)](https://npmjs.org/package/@ant-design-vue/pro-layout) [![Vue Support](https://img.shields.io/badge/support-Vue3-green?style=flat)](./package.json) [![Vue Grammar Level](https://img.shields.io/badge/full-Composition%20API-blue?style=flat)](https://v3.vuejs.org/guide/composition-api-introduction.html) [![NPM downloads](http://img.shields.io/npm/dm/@ant-design-vue/pro-layout.svg?style=flat)](https://npmjs.org/package/@ant-design-vue/pro-layout) [![License](https://img.shields.io/github/license/vueComponent/pro-layout)](./LICENSE)
+[![NPM version](https://img.shields.io/npm/v/@ant-design-vue/micro-layout/next?style=flat)](https://npmjs.org/package/@ant-design-vue/micro-layout) [![Vue Support](https://img.shields.io/badge/support-Vue3-green?style=flat)](./package.json) [![Vue Grammar Level](https://img.shields.io/badge/full-Composition%20API-blue?style=flat)](https://v3.vuejs.org/guide/composition-api-introduction.html) [![NPM downloads](http://img.shields.io/npm/dm/@ant-design-vue/micro-layout.svg?style=flat)](https://npmjs.org/package/@ant-design-vue/micro-layout) [![License](https://img.shields.io/github/license/vueComponent/micro-layout)](./LICENSE)
 
 </div>
 
@@ -12,9 +12,9 @@ Micro Design Layout
 
 ```bash
 # yarn
-yarn add @ant-design-vue/pro-layout@next
+yarn add micro-layout@next
 # npm
-npm i @ant-design-vue/pro-layout@next -S
+npm i micro-layout@next -S
 ```
 
 <details>
@@ -33,28 +33,28 @@ Recommend look [Examples](./examples/) | **Use Template https://github.com/sendy
 
 ### Simple Usage
 
-First, you should add the `@ant-design-vue/pro-layout` that you need into the library.
+First, you should add the `@ant-design-vue/micro-layout` that you need into the library.
 
 ```js
 // main.[js|ts]
 import 'ant-design-vue/dist/antd.less'; // antd css
-import '@ant-design-vue/pro-layout/dist/style.css'; // pro-layout css or style.less
+import '@ant-design-vue/micro-layout/dist/style.css'; // micro-layout css or style.less
 
 import { createApp } from 'vue';
 import App from "./App.vue";
 import Antd from 'ant-design-vue';
-import ProLayout, { PageContainer } from '@ant-design-vue/pro-layout';
+import ProLayout, { PageContainer } from '@ant-design-vue/micro-layout';
 
 const app = createApp(App);
 
 app.use(Antd).use(ProLayout).use(PageContainer).mount('#app');
 ```
 
-After that, you can use pro-layout in your Vue components as simply as this:
+After that, you can use micro-layout in your Vue components as simply as this:
 
 ```vue
 <template>
-  <pro-layout
+  <micro-layout
     :locale="locale"
     v-bind="layoutConf"
     v-model:openKeys="state.openKeys"
@@ -62,12 +62,12 @@ After that, you can use pro-layout in your Vue components as simply as this:
     v-model:selectedKeys="state.selectedKeys"
   >
     <router-view />
-  </pro-layout>
+  </micro-layout>
 </template>
 
 <script setup lang="ts">
 import { reactive, useRouter } from 'vue';
-import { getMenuData, clearMenuItem } from '@ant-design-vue/pro-layout';
+import { getMenuData, clearMenuItem } from '@ant-design-vue/micro-layout';
 
 const locale = (i18n: string) => i18n;
 const router = useRouter();

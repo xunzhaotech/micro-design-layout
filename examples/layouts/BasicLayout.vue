@@ -114,8 +114,8 @@
 import { computed, defineComponent, reactive, ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 import { message, Button, Input, Switch, Select, Avatar, Space, Badge, Menu } from 'ant-design-vue';
-import { getMenuData, clearMenuItem, WaterMark, FooterToolbar } from '@ant-design-vue/pro-layout';
-import type { RouteContextProps } from '@ant-design-vue/pro-layout';
+import { getMenuData, clearMenuItem, WaterMark, FooterToolbar } from 'micro-layout';
+import type { RouteContextProps } from 'micro-layout';
 
 const i18n = (t: string) => t;
 

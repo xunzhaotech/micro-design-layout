@@ -23,7 +23,7 @@ export default defineConfig({
   ],
   resolve: {
     alias: {
-      '@ant-design-vue/pro-layout': resolve(__dirname, 'src'),
+      'micro-layout': resolve(__dirname, 'src'),
       '@': resolve(__dirname, 'src'),
       'vue': 'vue/dist/vue.esm-bundler.js',
     },

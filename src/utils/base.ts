@@ -13,5 +13,5 @@ export function warn(valid: boolean, message: string) {
 }
 
 export function warning(valid: boolean, message: string) {
-  warn(valid, `[@ant-design-vue/pro-layout] ${message}`);
+  warn(valid, `[micro-layout] ${message}`);
 }

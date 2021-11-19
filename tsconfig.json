@@ -14,7 +14,7 @@
     "baseUrl": "./",
     "paths": {
       "@/*":["./src/*"],
-      "@ant-design-vue/pro-layout":["./src/index.ts"]
+      "micro-layout":["./src/index.ts"]
     }
   },
   "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "examples/**/*.vue"]

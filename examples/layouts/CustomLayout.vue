@@ -84,9 +84,9 @@ import {
   clearMenuItem,
   FooterToolbar,
   GlobalFooter,
-} from '@ant-design-vue/pro-layout';
+} from 'micro-layout';
 import { SmileOutlined } from '@ant-design/icons-vue';
-import type { RouteContextProps } from '@ant-design-vue/pro-layout';
+import type { RouteContextProps } from 'micro-layout';
 
 const i18n = (t: string) => t;
 
