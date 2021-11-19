@@ -7,7 +7,7 @@
     "dist"
   ],
   "style": "./dist/style.css",
-  "main": "./dist/pro-layout.umd.js",
+  "main": "./dist/micro-layout.umd.js",
   "module": "./dist/micro-layout.es.js",
   "exports": {
     ".": {
