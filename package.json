@@ -2,18 +2,18 @@
   "name": "micro-design-layout",
   "description": "Micro Design Layout of Vue, easy to use Micro scaffolding.",
   "keywords":["micro-design","micro-design-layout","micro-design-admin"],
-  "version": "1.0.3",
+  "version": "1.0.4",
   "license": "MIT",
   "files": [
     "dist"
   ],
   "style": "./dist/style.css",
-  "main": "./dist/micro-layout.umd.js",
-  "module": "./dist/micro-layout.es.js",
+  "main": "./dist/micro-design-layout.umd.js",
+  "module": "./dist/micro-design-layout.es.js",
   "exports": {
     ".": {
-      "import": "./dist/micro-layout.es.js",
-      "require": "./dist/micro-layout.umd.js"
+      "import": "./dist/micro-design-layout.es.js",
+      "require": "./dist/micro-design-layout.umd.js"
     },
     "./dist/style.css": "./dist/style.css",
     "./dist/style.less": "./dist/style.less"
