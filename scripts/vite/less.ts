@@ -40,7 +40,7 @@ export default (): Plugin => {
       }
 
       // write style.less
-      await fs.copy(resolve(src, 'index.less'), resolve(output, 'style.less'));
+      await fs.copy(resolve(src, 'styles/index.less'), resolve(output, 'style.less'));
     },
   };
 };
