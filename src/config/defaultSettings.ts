@@ -66,7 +66,7 @@ export const defaultSettings = {
     locale: true,
   },
   headerHeight: 48,
-  title: 'Ant Design Pro',
+  title: 'MicroDesign',
   iconfontUrl: '',
   primaryColor: '#1890ff',
 };
