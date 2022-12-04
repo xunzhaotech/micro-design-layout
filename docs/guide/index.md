@@ -2,11 +2,11 @@
  * @Author: luyb luyb@xunzhaotech.com
  * @Date: 2022-12-04 13:39:26
  * @LastEditors: luyb luyb@xunzhaotech.com
- * @LastEditTime: 2022-12-04 14:19:39
+ * @LastEditTime: 2022-12-04 16:58:45
  * @FilePath: \micro-design-layout\docs\guide\index.md
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
 -->
-# MicroDesign UI官方开发文档
+# 开发说明
 ## 说明
 MicroDesign开发主要包括主题、组件、插件的开发方式,开发语言采用[TypeScript](https://www.typescriptlang.org/),注释符合官方的 [TSDoc](https://tsdoc.org/) 标准,文档生产工具采用[TYPEDOC](https://typedoc.org/guides/installation/),组件发布在[NPM](https://www.npmjs.com/)`@microdesign`目录。
 ## 平台及版本要求
@@ -60,3 +60,6 @@ This is a details block.
 ## 插件开发规范
 ## 主题开发规范
 ## 组件发布规范
+```text
+npm login
+```

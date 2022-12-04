@@ -2,7 +2,7 @@
  * @Author: luyb luyb@xunzhaotech.com
  * @Date: 2022-12-04 12:15:51
  * @LastEditors: luyb luyb@xunzhaotech.com
- * @LastEditTime: 2022-12-04 14:24:08
+ * @LastEditTime: 2022-12-04 17:08:19
  * @FilePath: \micro-design-layout\docs\.vitepress\config.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -31,18 +31,19 @@ const config = defineConfig({
       nav: [
           { text: '说明', link: '/guide/', activeMatch: '/guide/' },
           { text: '配置', link: '/configs/', activeMatch: '/configs/' },
-          { text: '注释', link: '/pages/components/', activeMatch: '/pages/components/' },
+          { text: '注释', link: '/pages/notes/', activeMatch: '/pages/components/' },
           { 
             text: '开发规范',
             items: [
               { text: '插件', link: '/pages/plugins/', activeMatch: '/pages/plugins/' },
-              { text: '组件', link: '/pages/theme/', activeMatch: '/pages/theme/' },
-              { text: '主题', link: '/pages/templates/', activeMatch: '/pages/theme/' },
+              { text: '组件', link: '/pages/components/', activeMatch: '/pages/theme/' },
+              { text: '主题', link: '/pages/themes/', activeMatch: '/pages/theme/' },
             ] 
           },
-          { text: 'AP1文档', link: '/dist/', activeMatch: '/pages/docs/' },
-          { text: '关于我们', link: '/pages/about/', activeMatch: '/pages/about/' },
-          { text: '社区', link: '/pages/links/', activeMatch: '/pages/links/' },
+          { text: 'AP1文档', link: '/dist/README.md', activeMatch: '/pages/docs/' },
+          { text: '社区', link: '/pages/community/', activeMatch: '/pages/community/' },
+          { text: '关于', link: '/pages/about/', activeMatch: '/pages/about/' },
+          { text: '链接', link: '/pages/links/', activeMatch: '/pages/links/' },
           {
           text: version ,
           items: [
