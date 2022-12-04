@@ -2,7 +2,7 @@
  * @Author: luyb luyb@xunzhaotech.com
  * @Date: 2022-12-04 12:15:51
  * @LastEditors: luyb luyb@xunzhaotech.com
- * @LastEditTime: 2022-12-04 12:50:00
+ * @LastEditTime: 2022-12-04 14:24:08
  * @FilePath: \micro-design-layout\docs\.vitepress\config.ts
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -40,7 +40,7 @@ const config = defineConfig({
               { text: '主题', link: '/pages/templates/', activeMatch: '/pages/theme/' },
             ] 
           },
-          { text: 'AP1文档', link: '/pages/docs/README.md', activeMatch: '/pages/docs/' },
+          { text: 'AP1文档', link: '/dist/', activeMatch: '/pages/docs/' },
           { text: '关于我们', link: '/pages/about/', activeMatch: '/pages/about/' },
           { text: '社区', link: '/pages/links/', activeMatch: '/pages/links/' },
           {
