@@ -2,9 +2,10 @@
  * @Author: xunzhaotech
  * @Email: luyb@xunzhaotech.com
  * @QQ: 1525572900
- * @LastEditors: xunzhaotech
+ * @LastEditors: luyb luyb@xunzhaotech.com
  */
 import 'ant-design-vue/es/style';
+import './styles/index.css';
 import { ConfigProvider, Button } from 'ant-design-vue';
 import { createApp } from 'vue';
 import router from './router';

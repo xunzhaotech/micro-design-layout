@@ -9,13 +9,34 @@
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
-    "lib": ["esnext", "dom"],
-    "types": ["vite/client", "node"],
+    "lib": [
+      "esnext",
+       "dom"
+      ],
+    "types": [
+      "vite/client",
+       "node"
+      ],
     "baseUrl": "./",
     "paths": {
-      "@/*":["./src/*"],
-      "micro-layout":["./src/index.ts"]
+      "@/*":[
+        "./src/*"
+      ],
+      "micro-layout":[
+        "./src/index.ts"
+      ]
     }
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "examples/**/*.vue","examples/**/*.d.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "examples/**/*.vue",
+    "examples/**/*.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
