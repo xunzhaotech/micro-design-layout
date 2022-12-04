@@ -33,9 +33,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
-    "build:types": "tsc -b --force tsconfig.esm.json",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
+    "build:types": "tsc -b --force tsconfig.esm.json"
   },
   "types": "./dist",
   "peerDependencies": {
