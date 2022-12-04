@@ -23,6 +23,7 @@
   "devDependencies": {
     "typedoc": "^0.23.21",
     "typedoc-plugin-markdown": "^3.14.0",
-    "vitepress": "1.0.0-alpha.29"
+    "vitepress": "1.0.0-alpha.29",
+    "vitepress-theme-demoblock": "^2.0.0"
   }
 }
