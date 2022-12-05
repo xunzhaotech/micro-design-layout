@@ -12,7 +12,7 @@ import router from './router';
 import icons from './icons';
 import App from './App.vue';
 
-import MicroLayout, { PageContainer } from '../src'; // '../dist/pro-layout.es';
+import MicroLayout, { PageContainer } from '../src'; // '../dist/micro-layout.es';
 
 const app = createApp(App);
 app.use(router);

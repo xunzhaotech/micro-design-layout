@@ -2,7 +2,7 @@
  * @Author: xunzhaotech
  * @Email: luyb@xunzhaotech.com
  * @QQ: 1525572900
- * @LastEditors: xunzhaotech
+ * @LastEditors: luyb luyb@xunzhaotech.com
  */
 export * from './RouteContext';
 export * from './typings';
@@ -35,6 +35,6 @@ export type { WaterMarkProps } from './WaterMark';
 export { default } from './BasicLayout';
 // import BasicLayout from './BasicLayout';
 // export default BasicLayout;
-// export { default as MicroLayout } from './BasicLayout';
+export { default as MicroLayout } from './BasicLayout';
 export type { BasicLayoutProps } from './BasicLayout';
 
