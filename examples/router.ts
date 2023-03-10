@@ -2,11 +2,12 @@
  * @Author: xunzhaotech
  * @Email: luyb@xunzhaotech.com
  * @QQ: 1525572900
- * @LastEditors: xunzhaotech
+ * @LastEditors: luyb luyb@xunzhaotech.com
  */
 import { createRouter, createWebHistory } from 'vue-router';
 import type { RouteRecordRaw } from 'vue-router';
-import BasicLayout from './layouts/CustomLayout.vue';
+// import BasicLayout from './layouts/CustomLayout.vue';
+import BasicLayout from './layouts/BasicLayout.vue';
 import RouteView from './layouts/RouteView.vue';
 
 const routes: RouteRecordRaw[] = [

@@ -4,7 +4,8 @@
   "keywords": [
     "micro-design",
     "micro-design-layout",
-    "micro-design-admin"
+    "micro-design-admin",
+    "micro-design-pro"
   ],
   "version": "1.0.4",
   "license": "MIT",
@@ -33,6 +34,7 @@
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
     "serve": "vite preview",
+    "lint": "eslint --ext .{js,ts,vue,tsx}, .vue src/",
     "build:types": "tsc -b --force tsconfig.esm.json"
   },
   "types": "./dist",

@@ -27,5 +27,6 @@ module.exports = {
     '@typescript-eslint/no-empty-function': 0,
     '@typescript-eslint/no-non-null-assertion': 0,
     '@typescript-eslint/explicit-module-boundary-types': 0,
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
   },
 };
