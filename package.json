@@ -7,6 +7,10 @@
     "micro-design-admin",
     "micro-design-pro"
   ],
+  "author": {
+    "name": "MicroDesign",
+    "email": "luyb@xunzhaotech.com"
+  },
   "version": "1.0.4",
   "license": "MIT",
   "files": [
@@ -44,7 +48,7 @@
     "vue-router": "^4.0.3"
   },
   "dependencies": {
-    "ant-design-vue": "^2.2.8",
+    "ant-design-vue": "3.3.0-beta.4",
     "lodash-es": "^4.17.21",
     "omit.js": "^2.0.2",
     "vue": "^3.2.0",
