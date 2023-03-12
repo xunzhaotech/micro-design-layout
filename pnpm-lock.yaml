@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@ant-design/icons-vue': ^6.1.0
   '@types/lodash-es': ^4.17.4
   '@types/node': ^16.0.1
   '@typescript-eslint/eslint-plugin': ^4.28.2
@@ -31,6 +32,7 @@ specifiers:
   vue-tsc: ^0.3.0
 
 dependencies:
+  '@ant-design/icons-vue': 6.1.0_vue@3.2.45
   ant-design-vue: 3.3.0-beta.4_vue@3.2.45
   lodash-es: 4.17.21
   omit.js: 2.0.2
