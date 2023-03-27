@@ -2,15 +2,15 @@
  * @Author: xunzhaotech
  * @Email: luyb@xunzhaotech.com
  * @QQ: 1525572900
- * @LastEditors: xunzhaotech
+ * @LastEditors: luyb luyb@xunzhaotech.com
 -->
 <template>
-  <PageContainer :title="$route.meta.title">
+  <PageContainer :title="route.meta.title">
     <template #tags>
-      <a-tag>tag1</a-tag>
-      <a-tag color="pink">tag2</a-tag>
+      <Tag>tag1</Tag>
+      <Tag color="pink">tag2</Tag>
     </template>
-    <a-result
+    <Result
       status="404"
       :style="{
         height: '100%',
@@ -22,21 +22,13 @@
       <template #extra>
         <a-button type="primary">Back Home</a-button>
       </template>
-    </a-result>
+    </Result>
   </PageContainer>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" name="page2" setup>
+import { useRoute } from 'vue-router';
 import { Tag, Result } from 'ant-design-vue';
 
-export default defineComponent({
-  components: {
-    [Tag.name]: Tag,
-    [Result.name]: Result,
-  },
-  setup() {
-    return {};
-  },
-});
+const route = useRoute();
 </script>
