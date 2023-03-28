@@ -110,7 +110,7 @@ const LazyIcon: FunctionalComponent<{
   icon: VNodeChild | string;
   iconPrefixes?: string;
   prefixCls?: string;
-}> = (props) => {
+}> = props => {
   const { icon, iconPrefixes = 'icon-', prefixCls = 'ant-pro' } = props;
   if (!icon) {
     return null;
@@ -140,7 +140,9 @@ const LazyIcon: FunctionalComponent<{
 
 class MenuUtil {
   props: BaseMenuProps;
+
   ctx: ComponentInternalInstance | null;
+
   RouterLink: ConcreteComponent;
 
   constructor(props: BaseMenuProps, ctx: ComponentInternalInstance | null) {
@@ -193,12 +195,13 @@ class MenuUtil {
       );
     }
 
-    const menuItemRender = this.props.menuItemRender && withCtx(this.props.menuItemRender, this.ctx)
+    const menuItemRender =
+      this.props.menuItemRender && withCtx(this.props.menuItemRender, this.ctx);
 
     const [title, icon] = this.getMenuItem(item);
 
     return (
-      (menuItemRender && menuItemRender({ item, title, icon }) as VNode) || (
+      (menuItemRender && (menuItemRender({ item, title, icon }) as VNode)) || (
         <Menu.Item
           disabled={item.meta?.disabled}
           danger={item.meta?.danger}
@@ -252,7 +255,7 @@ export type MenuOnSelect = {
   selectedKeys: string[];
 }
 
-export type MenuOnClick={
+export type MenuOnClick = {
   item: VNodeChild;
   key: string | number;
   keyPath: string | string[] | number | number[];
@@ -284,7 +287,6 @@ export default defineComponent({
       emit('click', args);
     };
 
-
     return () => {
       return (
         <Menu
@@ -301,7 +303,7 @@ export default defineComponent({
         >
           {menuUtil.getNavMenuItems(props.menuData)}
         </Menu>
-      )
+      );
     };
   },
 });
