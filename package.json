@@ -3,6 +3,7 @@
   "description": "Micro Design Layout of Vue, easy to use Micro scaffolding.",
   "keywords": [
     "micro-design",
+    "micro-design-ui",
     "micro-design-layout",
     "micro-design-admin",
     "micro-design-pro"
@@ -11,7 +12,7 @@
     "name": "MicroDesign",
     "email": "luyb@xunzhaotech.com"
   },
-  "version": "1.0.6",
+  "version": "1.0.5",
   "license": "MIT",
   "files": [
     "dist"

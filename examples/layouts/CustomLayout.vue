@@ -2,7 +2,7 @@
  * @Author: xunzhaotech
  * @Email: luyb@xunzhaotech.com
  * @QQ: 1525572900
- * @LastEditors: xunzhaotech
+ * @LastEditors: luyb luyb@xunzhaotech.com
 -->
 <template>
   <micro-layout
@@ -52,9 +52,9 @@
       >
         <router-link :to="{ path: item.path }">
           <div class="a-menu-item-title">
-            <a-badge count="5" dot>
+            <Badge count="5" dot>
               {{ item.meta.title }}
-            </a-badge>
+            </Badge>
           </div>
         </router-link>
       </a-menu-item>
@@ -65,9 +65,24 @@
     <template #footerRender>
       <GlobalFooter
         :links="[
-          { key: '讯曌官网', title: '讯曌官网', href: 'http://www.xunzhaotech.com/#/home', blankTarget: true },
-          { key: '快智岛', title: '快智岛', href: 'https://xunzhaotech.gitee.io/kuaizhidao', blankTarget: true },
-           { key: '答神', title: '答神', href: 'https://xunzhaotech.gitee.io/kuaizhidao', blankTarget: true },
+          {
+            key: '讯曌官网',
+            title: '讯曌官网',
+            href: 'http://www.xunzhaotech.com/#/home',
+            blankTarget: true,
+          },
+          {
+            key: '快智岛',
+            title: '快智岛',
+            href: 'https://xunzhaotech.gitee.io/kuaizhidao',
+            blankTarget: true,
+          },
+          {
+            key: '答神',
+            title: '答神',
+            href: 'https://xunzhaotech.gitee.io/kuaizhidao',
+            blankTarget: true,
+          },
         ]"
         copyright="@2016-2021 &copy; Xunzhaotech"
       ></GlobalFooter>
@@ -75,97 +90,59 @@
   </micro-layout>
 </template>
 
-<script lang="ts">
-import { computed, defineComponent, reactive, ref, watchEffect } from 'vue';
+<script lang="ts" name="CustomLayout" setup>
+import { computed, reactive, ref, watchEffect } from 'vue';
 import { useRouter } from 'vue-router';
 import { Button, Switch, Select, Space, Badge, Menu } from 'ant-design-vue';
-import {
-  getMenuData,
-  clearMenuItem,
-  FooterToolbar,
-  GlobalFooter,
-} from 'micro-layout';
+import { getMenuData, clearMenuItem, GlobalFooter } from 'micro-layout';
 import { SmileOutlined } from '@ant-design/icons-vue';
 import type { RouteContextProps } from 'micro-layout';
 
-const i18n = (t: string) => t;
-
-export default defineComponent({
-  name: 'BasicLayout',
-  components: {
-    FooterToolbar,
-    [Button.name]: Button,
-    [Switch.name]: Switch,
-    [Select.name]: Select,
-    [Select.Option.displayName!]: Select.Option,
-    [Space.name]: Space,
-
-    [Badge.name]: Badge,
-    [Menu.Item.name]: Menu.Item,
-
-    GlobalFooter,
-    SmileOutlined,
-  },
-  setup() {
-    const loading = ref(false);
-
-    const router = useRouter();
-    const { menuData } = getMenuData(clearMenuItem(router.getRoutes()));
-
-    const baseState = reactive<Omit<RouteContextProps, 'menuData'>>({
-      selectedKeys: [],
-      openKeys: [],
-      // default
-      collapsed: false,
-    });
-
-    const state = reactive({
-      menuData,
-      splitMenus: false,
-      // title: 'ProLayout',
-      // logo: 'https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg',
-      navTheme: 'dark',
-      layout: 'mix',
-    });
-    const breadcrumb = computed(() =>
-      router.currentRoute.value.matched.concat().map(item => {
-        return {
-          path: item.path,
-          breadcrumbName: item.meta.title || '',
-        };
-      }),
-    );
-
-    const handleCollapsed = () => {
-      baseState.collapsed = !baseState.collapsed;
-    };
-    watchEffect(() => {
-      if (router.currentRoute) {
-        const matched = router.currentRoute.value.matched.concat();
-        baseState.selectedKeys = matched.filter(r => r.name !== 'index').map(r => r.path);
-        baseState.openKeys = matched
-          .filter(r => r.path !== router.currentRoute.value.path)
-          .map(r => r.path);
-      }
-    });
-
-    function handlePageLoadingClick() {
-      loading.value = true;
-      setTimeout(() => {
-        loading.value = false;
-      }, 2000);
-    }
-
-    return {
-      i18n,
-      baseState,
-      state,
-      loading,
-      breadcrumb,
-
-      handlePageLoadingClick,
-      handleCollapsed,
-    };
-  },
+// const i18n = (t: string) => t;
+const loading = ref(false);
+const router = useRouter();
+const { menuData } = getMenuData(clearMenuItem(router.getRoutes()));
+const baseState = reactive<Omit<RouteContextProps, 'menuData'>>({
+  selectedKeys: [],
+  openKeys: [],
+  // default
+  collapsed: false,
 });
+
+const state = reactive({
+  menuData,
+  splitMenus: false,
+  // title: 'ProLayout',
+  // logo: 'https://alicdn.antdv.com/v2/assets/logo.1ef800a8.svg',
+  navTheme: 'dark',
+  layout: 'mix',
+});
+const breadcrumb = computed(() =>
+  router.currentRoute.value.matched.concat().map(item => {
+    return {
+      path: item.path,
+      breadcrumbName: item.meta.title || '',
+    };
+  }),
+);
+
+const handleCollapsed = () => {
+  baseState.collapsed = !baseState.collapsed;
+};
+watchEffect(() => {
+  if (router.currentRoute) {
+    const matched = router.currentRoute.value.matched.concat();
+    baseState.selectedKeys = matched.filter(r => r.name !== 'index').map(r => r.path);
+    baseState.openKeys = matched
+      .filter(r => r.path !== router.currentRoute.value.path)
+      .map(r => r.path);
+  }
+});
+
+function handlePageLoadingClick() {
+  loading.value = true;
+  setTimeout(() => {
+    loading.value = false;
+  }, 2000);
+}
 </script>

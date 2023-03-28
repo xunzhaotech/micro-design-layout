@@ -31,4 +31,6 @@ import { useRoute } from 'vue-router';
 import { Tag, Result } from 'ant-design-vue';
 
 const route = useRoute();
+console.log(111111111111111111111);
+console.log(route);
 </script>
